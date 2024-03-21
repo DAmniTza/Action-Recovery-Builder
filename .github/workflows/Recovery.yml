@@ -171,7 +171,7 @@ jobs:
       if: ${{ steps.buildtree.outputs.value == 'aosp' }}
       run: |
         source build/envsetup.sh
-        lunch twrp_${{ inputs.DEVICE_NAME }}-eng
+        lunch omni_${{ inputs.DEVICE_NAME }}-eng
       working-directory: workspace
       id: syncdevicedeps
       continue-on-error: true
